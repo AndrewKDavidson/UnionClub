@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/AndrewKDavidson/UnionClub#readme",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
   },
