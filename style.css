@@ -1,0 +1,22 @@
+.homeBody{
+    background:url(https://unionclubtacoma.com/wp-content/uploads/2017/12/UnionClubForWebNOBlack1920x1600.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0px;
+}
+
+.navbar-dark{
+    background-color:rgba(10,0,0,0.75);
+}
+
+
+.footer {
+    background-color: #333;
+    color: lightslategrey;
+    
+}
+
