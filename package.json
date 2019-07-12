@@ -22,6 +22,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
+    "scroll-parallax": "^3.0.3",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
