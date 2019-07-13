@@ -85,7 +85,7 @@ body {
 
 /* header styles */
 .overlayBox {
-    background: rgba(10,0,0,0.25);
+    background: rgba(10,0,0,0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -97,7 +97,7 @@ body {
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background: lightblue;
+    background: url('../img/jumbotron-bg.jpg') center / cover;
     color: floralwhite;
     width: 100vw;
     height: 100vh;
