@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <!--Bootstrap css files-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
-    <!-- <link rel="stylesheet" id="ot-google-fonts-css" href="//fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic%7CMontserrat:regular,700" type="text/css" media="all"> -->
+    <link rel="stylesheet" id="ot-google-fonts-css" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic%7CMontserrat:regular,700" type="text/css" media="all">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Union Club Tacoma</title>
@@ -17,8 +20,9 @@
 
 <body>
     <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top gray-border">
-        <a class="navbar-brand gray-border mr-0" href="#">Union Club tacoma</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-items">
+        <a class="navbar-brand gray-border mr-0 text-center" href="#">Union Club tacoma<br><span class="navbar-phone">(253) 304-8415</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="
+        collapse" data-target="#nav-items" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
@@ -30,16 +34,16 @@
                     <li class="nav-item"><a class="nav-link" href="#">Rentals</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item d-block d-md-none"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item d-block d-lg-none"><a class="nav-link" href="#">Login</a></li>
                 </ul>
             </div>
         </div>
-        <a href="javascript:void(0);" class="navbar-brand navbar-login gray-border d-none d-md-block" data-toggle="modal" data-target="#loginModal">Member Login</a>
+        <a href="javascript:void(0);" class="navbar-brand navbar-login gray-border d-none d-lg-block" data-toggle="modal" data-target="#loginModal">Member Login</a>
     </nav>
 
-
+    <!-- login modal -->
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -49,19 +53,29 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-row justify-content-center">
-                            <div class="form-group col-sm-4">
-                                    <label for="username">Username</label>
+                            <div class="form-group col-sm-7">
+                                <label for="username">Username:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
                                     <input type="username" class="form-control form-control-sm mr-1" id="username">
+                                </div>
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
-                            <div class="form-group col-sm-4">
-                                <label for="passowrd">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="password">
+                            <div class="form-group col-sm-7">
+                                <label for="passoword">Password:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="password">
+                                </div>
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
-                            <div class="col-sm-4 text-center mb-3">
+                            <div class="col-sm-5 text-center mb-3">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"> Remember me
@@ -79,7 +93,7 @@
         </div>
     </div>
 
-
+    <!-- Full height and width banner -->
     <header class="jumbotron ">
         <div class="overlayBox"></div>
         <div class="container text-center">
@@ -135,6 +149,7 @@
         </div>
     </div>
 
+    <!-- footer content -->
     <footer class="footer">
         <div class="container">
             <div class="row">             
