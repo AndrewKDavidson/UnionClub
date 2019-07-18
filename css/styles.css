@@ -24,8 +24,13 @@
 
 
 /* global styles */
+html{
+    background-color: #333;
+}
 body {
-    padding: 0px;
+    position: relative;
+    left: 0;
+    padding: 0px!important;
     z-index: 0; 
     -webkit-transition: left 0.6s ease;
     -moz-transition: left 0.6s ease;
@@ -61,6 +66,8 @@ body {
 
 /* navbar styles */
 .navbar {
+    position: fixed; /* added to support older browsers */
+    position: sticky;
     padding: 0px;
     z-index: 1000;
     background-color: transparent;
@@ -139,6 +146,41 @@ body {
     font-weight: 700;
 }
 
+
+
+
+/* mobile navbar styles */
+#mobile-nav {
+    padding: 12px 20px;
+    position: fixed!important;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    text-align: right;
+    transition: right .6s ease;
+    background-color: #333;
+    /* font-weight: 400!important; */
+}
+
+.mobile-menu .nav-item {
+    padding: 0;
+}
+
+.mobile-menu .navbar-nav{
+    height: 100%
+}
+
+.menuExpanded #mobile-nav{
+    right: 0;
+}
+
+body.menuExpanded {
+    left: -250px;
+}
+
+
+
 /* styles when navbar is scrolling */
 .navbar.isScrolling {
     background-color: white;
@@ -169,6 +211,25 @@ body {
     color: #fff!important;
 }
 
+.mobile-menu #mobile-nav a {
+    color: rgba(255,255,255,.5)!important;
+    border-bottom: transparent!important;
+    font-weight: 400!important;
+    font-size: 12px!important;
+    padding: 8px 0px!important;
+}
+
+
+.isScrolling .mobile-menu #mobile-nav a:hover, .menuExpanded .mobile-menu #mobile-nav a:hover {
+    color: rgba(255,255,255,1)!important;
+    border-bottom: transparent!important;
+}
+
+#mobile-nav hr {
+    border-color: rgba(255,255,255,.5);
+    margin: 8px 0;
+}
+
 
 
 /* header styles */
@@ -183,6 +244,8 @@ body {
 }
 
 .jumbotron {
+    position: absolute;
+    top: 0;
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
     background: url('../img/jumbotron-bg.jpg') center / cover;
