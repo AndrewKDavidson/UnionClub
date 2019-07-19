@@ -7,7 +7,6 @@ function init() {
 
 // delay onscroll to every 100ms, run checkscroll
 var didScroll = false;
-
 window.onscroll = doThisStuffOnScroll;
 
 function doThisStuffOnScroll() {
@@ -45,17 +44,14 @@ $('#mobile-nav').on('hide.bs.collapse', function () {
 
 
 // throttling window.resize event listener
-var throttled = false;
+var resizeThrottled = false;
 window.addEventListener('resize', function() {
-    // only run if we're not throttled
-  if (!throttled) {
-    // actual callback action
+  if (!resizeThrottled) {
     windowResizing();
-    // we're throttled!
-    throttled = true;
-    // set a timeout to un-throttle
+    resizeThrottled = true;
+    
     setTimeout(function() {
-      throttled = false;
+      resizeThrottled = false;
     }, 250);
   }  
 });
