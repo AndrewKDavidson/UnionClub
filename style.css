@@ -1,0 +1,67 @@
+.homeBody{
+    background:url(https://unionclubtacoma.com/wp-content/uploads/2017/12/UnionClubForWebNOBlack1920x1600.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0px;
+}
+
+.navbar-dark{
+    background-color:rgba(10,0,0,0.75);
+}
+
+
+.footer {
+    background-color: #333;
+    color: lightslategrey;
+    
+}
+
+.aboutClub{
+    text-align: center;
+    padding: 25px;
+}
+
+.comfOff{
+    padding: 25px;
+}
+
+.deskLady{
+    position:relative;
+    bottom: 150%;
+}
+
+.membership{
+    background-image:url("https://unionclubtacoma.com/wp-content/uploads/2017/12/DSCF7105FBCOPY1920x1600BLACKW.jpg") no-repeat;
+    position: relative;
+    height: 482px;
+    width:100%;
+    background-position:center;
+    background-size: cover;
+    padding-top: 63px;
+}
+
+
+.carousel-item{
+    height: 300px;
+}
+
+.carousel-item img{
+    position:absolute;
+    top:0;
+    left:0;
+    min-height: 300px;
+}
+
+
+.card-img{
+   min-height: 380px;
+}
+
+.prices{
+   width: 100%;
+   margin-right: 10px; 
+}
