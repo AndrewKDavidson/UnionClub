@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="./rentals.html">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./media.html">GALLERY</a></li>
                     <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
                     <li class="nav-item d-block d-lg-none"><a class="nav-link" href="#">Login</a></li>
                 </ul>
@@ -40,10 +40,10 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./media.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
                     <li><hr></li>
                     <li class="nav-link mt-2"><a href="javascript:void(0);"><span class="fa fa-facebook-square mr-2"></span></a><a href="javascript:void(0);"><span class="fa fa-twitter ml-2"></span></a></li>
@@ -108,15 +108,16 @@
         <div class="row jumbotron-header text-center">
             <div class="col-12">
                 <h1 class="title">ABOUT US</h1>
-                </div>
+             </div>
         </div>
-<div class="container">
+    </header>
+    <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage570x270W.jpg" class="img-fluid comfOff" alt="comfortable office">
+            <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage570x270W.jpg" class="img-fluid office" alt="comfortable office">
         </div>
          <div class="col-md-6 aboutClub">
-    <h2>ABOUT THE UNION CLUB</h2>
+        <h2>ABOUT THE UNION CLUB</h2>
     <br>
     <p> The Union Club is a coworking space contributing to Tacoma's growing artistic and entrepreneurial communities. It combines a maker studio, event hall, and office coworking space, in a 15,000 square foot historic building in downtown Tacoma. <br>
 
@@ -129,6 +130,11 @@
             
         In 2016, the Union Club was in a state of disrepair and was purchased by Amber and Eli Moreno. With a passion for historical preservation they have restored the building back to its original grandeur and have created a new, modern take on the Union Club.
     </p>
+    <span class="navbar-text">
+        <a data-toggle="modal" data-target="#formModal">
+            <button type="button" class="btn btn-member">Become a Member </button>
+        </a>
+    </span>
         </div>
         </div>
         <div class="row">
@@ -139,11 +145,27 @@
                 <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottomImage270x270W.jpg" class="img-fluid guyAtDesk" alt="guy at desk">
                 </div>
         </div>
-        <span class="navbar-text">
-                <a data-toggle="modal" data-target="#formModal">
-                    <span class="fa fa-sign-in"></span> Become a Member
-                </a>
-        </span>
+    </div>    
+
+    <h2>MEET OUR TEAM</h2>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://unionclubtacoma.com/wp-content/uploads/2019/05/cropped-Kyro-Headshot-2-300x300.jpeg" alt="Kyro Parker">
+            <div class="card-body">
+              <h5>Kyro Parker</h5>
+              <p class="card-text">Community Manager & Events Manager</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://unionclubtacoma.com/wp-content/uploads/2018/01/cropped-UnionClub_HeatherHurtPhotography-12-1-300x300.jpg">
+                <div class="card-body">
+                  <h5>Stasha Moreno</h5>
+                  <p class="card-text">Chief Operations Officer</p>
+                </div>
+            </div>
+
+
+
     <!-- Form Modal Content-->
     <div id="formModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="content"> 
@@ -203,6 +225,8 @@
                 </div>
             </div>
         </div>
+    
+        
 
     <!-- Jquery first, then popper.js, then bootstrap, then parallax, then custom js -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
