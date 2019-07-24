@@ -1,9 +1,3 @@
-.homeBody{
-    background:url(https://unionclubtacoma.com/wp-content/uploads/2017/12/UnionClubForWebNOBlack1920x1600.jpg) no-repeat;
-    background-size: cover; 
-}
-
-
 body {
     padding: 50px 0px 0px 0px;
     z-index: 0px;
@@ -13,38 +7,34 @@ body {
     background-color:rgba(10,0,0,0.75);
 }
 
-
-.footer {
-    background-color: #333;
-    color: lightslategrey;
+.title{
+    text-size-adjust: 500px;
+    text-align: center;
     
 }
-
+/*About Page*/
 .aboutClub{
     text-align: center;
     padding: 25px;
+    top: 90px;
 }
 
-.comfOff{
-    padding: 25px;
+.office{
+    position: absolute;
+    top: 120px;
 }
 
-.deskLady{
+.deskLady, .guyAtDesk{
     position:relative;
-    bottom: 150%;
+    bottom: 100%;
 }
 
-.membership{
-    background-image:url("https://unionclubtacoma.com/wp-content/uploads/2017/12/DSCF7105FBCOPY1920x1600BLACKW.jpg") no-repeat;
-    position: relative;
-    height: 482px;
-    width:100%;
-    background-position:center;
-    background-size: cover;
-    padding-top: 63px;
+.btn-member{
+    background-color: #544f75;
+    color: #fff;
 }
 
-
+/*Rentals Page */
 .carousel-item{
     height: 300px;
 }
@@ -56,12 +46,54 @@ body {
     min-height: 300px;
 }
 
-
 .card-img{
    min-height: 380px;
 }
 
-.prices{
-   width: 100%;
-   margin-right: 10px; 
+
+.overlayBox {
+    background: rgba(10,0,0,0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    color: floralwhite;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.jumbotron .container {
+    margin-top: -100px;
+    top: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+
+/* Colors */
+.gray-border {
+    border-color: rgba(255,255,255,0.2)!important;
+}
+
+
+/* footer styles */
+.footer {
+    background-color: #333;
+    color: lightslategray;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
 }
