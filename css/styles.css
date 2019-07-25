@@ -408,6 +408,19 @@ body.menuExpanded {
     margin-bottom: 14px;
 }
 
+.instagram-section li {
+    width: 12.5%;
+    float: left;
+  }
+  
+.instagram-section img {
+    border: 0 none;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 /* footer styles */
 .footer {
     background-color: #333;
