@@ -300,6 +300,18 @@ body.menuExpanded {
     z-index: 1;
 }
 
+.jumbotron-about {
+    position: relative;
+    top: 85px;
+    padding: 70px 10px 70px 10px;
+    margin: 0px auto;
+    background: url("https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage1920x600W.jpg") center / cover;
+    color:floralwhite;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+}
+
 .jumbotron .jumbotron-header {
     margin-top: -100px;
     top: 50%;
@@ -342,6 +354,11 @@ body.menuExpanded {
     min-height: 140px;
 }
 
+/*Form Modal Styles*/
+
+#formModal{
+    color:#333;
+}
 
 /* footer styles */
 .footer {

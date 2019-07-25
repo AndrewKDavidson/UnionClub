@@ -1,3 +1,21 @@
+/* font styles */
+
+/* Montserrat fonts */
+.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .h1-greatHall, .card-title  {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Lato fonts */
+.navbar .navbar-phone, .navbar .navbar-brand, .jumbotron-header h3  {
+    font-family: 'Lato', sans-serif;
+}
+
+/* 12px fonts */
+.navbar .nav-link, .navbar .navbar-login  {
+    font-size: 14px;
+}
+
+
 body {
     padding: 50px 0px 0px 0px;
     z-index: 0px;
@@ -35,19 +53,32 @@ body {
 }
 
 /*Rentals Page */
-.carousel-item{
-    height: 300px;
+
+.h1-greatHall{
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+    color: #544f75;  
+    padding: 10px;
+    margin: 10px;
+}
+.greatHall{
+    padding: 10px;
+    margin: 10px;
 }
 
-.carousel-item img{
-    position:absolute;
-    top:0;
-    left:0;
-    min-height: 300px;
+.card-title{
+    color: #2ebd7f;
+    font-size: 46px;
+    position: relative;
+    font-weight: normal;
 }
 
-.card-img{
-   min-height: 380px;
+.hallCard{
+    max-width: 375px;
+    align-self: center;
+    border: none;
+    height: 200px;
 }
 
 
