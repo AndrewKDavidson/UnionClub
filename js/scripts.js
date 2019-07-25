@@ -3,6 +3,7 @@ document.body.onload = init();
 
 function init() {
   checkScroll();
+  initParallax();
 };
 
 // delay onscroll to every 100ms, run checkscroll
@@ -30,10 +31,10 @@ function checkScroll() {
 }
 
 // initialize parallax
-var p = new Parallax('.parallax').init();
-
-
-
+function initParallax() {
+  var p = new Parallax('.parallax').init();
+}
+initParallax();
 
 // delay navbar toggler event listener by 250ms
 $('#mobile-nav').on('show.bs.collapse', function () {
@@ -43,7 +44,6 @@ $('#mobile-nav').on('show.bs.collapse', function () {
 $('#mobile-nav').on('hide.bs.collapse', function () {
   $("body").removeClass("menuExpanded");
 })
-
 
 // throttling window.resize event listener
 var resizeThrottled = false;
@@ -59,7 +59,6 @@ window.addEventListener('resize', function() {
 });
 
 function windowResizing() {
-  console.log('remove class');
   if ($(window).width() > 992) {
     $("body").removeClass("menuExpanded");
   } else if ($(window).width() < 992 && $("#mobile-nav").hasClass('show')) {
