@@ -106,7 +106,7 @@
     
     <header class="jumbotron-about">
         <div class="row jumbotron-header text-center">
-            <div class="col-12">
+            <div class="col-md-12">
                 <h1 class="title">ABOUT US</h1>
              </div>
         </div>
@@ -116,7 +116,7 @@
         <div class="col-md-6">
             <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage570x270W.jpg" class="img-fluid office" alt="comfortable office">
         </div>
-         <div class="col-md-6 aboutClub">
+         <div class="col-md-6 col-12 aboutClub">
         <h2>ABOUT THE UNION CLUB</h2>
     <br>
     <p> The Union Club is a coworking space contributing to Tacoma's growing artistic and entrepreneurial communities. It combines a maker studio, event hall, and office coworking space, in a 15,000 square foot historic building in downtown Tacoma. <br>
@@ -138,94 +138,130 @@
         </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottoomImage270x270W.jpg" class="img-fluid deskLady" alt="lady at desk">
             </div>
-                <div class="col-3">
+                <div class="col-6 col-md-4 col-lg-3">
                 <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottomImage270x270W.jpg" class="img-fluid guyAtDesk" alt="guy at desk">
                 </div>
         </div>
     </div>    
-
+<div class="container">
     <h2>MEET OUR TEAM</h2>
-        <div class="card" style="width: 18rem;">
+        <div class="row">
+        <div class="card team col-md-5 col-lg-3 offset-2">
             <img class="card-img-top" src="https://unionclubtacoma.com/wp-content/uploads/2019/05/cropped-Kyro-Headshot-2-300x300.jpeg" alt="Kyro Parker">
             <div class="card-body">
               <h5>Kyro Parker</h5>
               <p class="card-text">Community Manager & Events Manager</p>
             </div>
         </div>
-
-        <div class="card" style="width: 18rem;">
+        <div class="card team col-md-5 col-lg-3">
                 <img class="card-img-top" src="https://unionclubtacoma.com/wp-content/uploads/2018/01/cropped-UnionClub_HeatherHurtPhotography-12-1-300x300.jpg">
                 <div class="card-body">
                   <h5>Stasha Moreno</h5>
                   <p class="card-text">Chief Operations Officer</p>
                 </div>
             </div>
+        </div>
+    </div>
 
-
-
-    <!-- Form Modal Content-->
-    <div id="formModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="content"> 
-            <div class="modal-content">
-                <div class="modal-header">
-                     <h4 class="modal-title">Become a Member </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    
+  <!-- footer content -->
+  <footer class="footer">
+        <div class="col-12 footer-social">
+                <div class="text-center d-flex justify-content-center">
+                    <div class="social-item mr-5">
+                        <a class="btn text-center" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-square"></i><span class="d-none d-lg-inline">Facebook</span></a>
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-row justify-content-center">
-                                <div class="form-group col-sm-7">
-                                    <label for="username">Create Username:</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="username" class="form-control form-control-sm mr-1" id="username">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center">
-                                <div class="form-group col-sm-7">
-                                    <label for="passoword">Create a Password:</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
-                                        </div>
-                                        <input type="password" class="form-control form-control-sm mr-1" id="password">
-                                    </div>
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-sm-7">
-                                            <label for="email">Enter email:</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="fa fa-enevelope"></i></span>
-                                                </div>
-                                                <input type="email" class="form-control form-control-sm mr-1" id="email">
-                                            </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center">
-                                <div class="col-sm-5 text-center mb-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center">
-                                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-2">Sign in</button>        
-                            </div>
-                        </form>
+                    <div class="social-item">
+                        <a class="btn text-center" href="http://twitter.com/"><i class="fa fa-twitter"></i><span class="d-none d-lg-inline">Twitter</span></a>
                     </div>
                 </div>
             </div>
+        <div class="row">             
+            <div class="col-12 footer-links d-flex justify-content-center position-absolute">
+                <ul class="d-flex d-inline justify-content-center flex-wrap justify-content-sm-between  align-items-center list-unstyled">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
+                    <li class="nav-item right-space"><a href="#">Pricing</a></li>
+                    <li class="nav-item left-space"><a href="#">Rentals</a></li>
+                    <li class="nav-item"><a href="#">Media</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo mx-auto">
+                <a href="index.html">
+                    <img class="mx-auto" src="img/Union-Club-White-Cropped-for-Footer.png" alt="Union Club Tacoma Logo">
+                </a>
+            </div>
         </div>
-    
+        <div class="row justify-content-center">             
+            <div class="col-auto copyright">
+                <p>© Copyright 2019 Union Club tacoma</p>
+            </div>
+        </div>
+    </footer>   
+
+    <!-- Form Modal Content-->
+    <div id="formModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="content"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h4 class="modal-title">Become a Member </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-sm-7">
+                                        <label for="username">Create Username:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="username" class="form-control form-control-sm mr-1" id="username">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-sm-7">
+                                        <label for="passoword">Create a Password:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control form-control-sm mr-1" id="password">
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-sm-7">
+                                                <label for="email">Enter email:</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="fa fa-enevelope"></i></span>
+                                                    </div>
+                                                    <input type="email" class="form-control form-control-sm mr-1" id="email">
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="col-sm-5 text-center mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label"> Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-2">Sign in</button>        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
 
     <!-- Jquery first, then popper.js, then bootstrap, then parallax, then custom js -->
