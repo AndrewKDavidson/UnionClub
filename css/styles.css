@@ -1,11 +1,10 @@
 /* font styles */
-
-/* Montserrat fonts */
 /* Lato fonts */
 *  {
     font-family: 'Lato', sans-serif;
 }
 
+/* Montserrat fonts */
 .navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3  {
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,6 +19,25 @@
     background-color: #544f75;
 }
 
+/* animation delays */
+.anim-delay-1 {
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+}
+
+.anim-delay-2 {
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+}
+
+.anim-delay-3 {
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+.anim-delay-4 {
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+}
 
 /* global styles */
 html, body {
@@ -334,6 +352,8 @@ body.menuExpanded {
 .benefits-section {
     padding: 60px 0;
     background-color: rgb(248, 248, 248);
+    z-index: 10;
+    position: relative;
 }
 
 .benefits-section .row-header {
@@ -406,6 +426,10 @@ body.menuExpanded {
     font-size: 36px;
     color: #333;
     margin-bottom: 14px;
+}
+
+.subscribe-section input {
+    border: 1px solid #e5e5e5;
 }
 
 .instagram-section li {
@@ -539,30 +563,24 @@ body.menuExpanded {
     .navbar-brand {
         border-right: 0;
     }
-
     .footer-social {
         padding: 30px 0;
         margin-bottom: 20px;
     }
-
     .footer-logo{
         margin-bottom: 16px;
     }
-
     .footer-links {
         position: relative!important;
         margin-top: 0px;
         margin-left: 0;
     }
-
     .footer-links .left-space {
         margin-left: 0px;
     }
-    
     .footer-links .right-space {
         margin-right: 0px;
     }
-
     .jumbotron h1 {
         font-size: 60px;
     }
@@ -576,6 +594,13 @@ body.menuExpanded {
     .map-container {
         height: 400px;
     }
+    .jumbotron-header h1 {
+        margin-bottom: 30px;
+    }
+    .jumbotron .jumbotron-header {
+        margin-top: -80px;
+    }
+
 }
 
 @media (max-width: 576px) {

@@ -4,6 +4,7 @@ document.body.onload = init();
 function init() {
   checkScroll();
   initParallax();
+  initWow();
 };
 
 // delay onscroll to every 100ms, run checkscroll
@@ -35,6 +36,14 @@ function initParallax() {
   var p = new Parallax('.parallax').init();
 }
 initParallax();
+
+// initialize window.js
+function initWow() {
+  new WOW().init();
+}
+
+initWow()
+
 
 // delay navbar toggler event listener by 250ms
 $('#mobile-nav').on('show.bs.collapse', function () {
