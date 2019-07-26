@@ -51,11 +51,7 @@ body {
     width: 18rem;
     margin: 25px;
     border: none;
-    align-self: center;
-}
-
-.meet-team{
-    align-self: center;
+    
 }
 
 .btn-member{
@@ -78,15 +74,16 @@ body {
     margin: 10px;
 }
 
-.card-title{
+.rentals{
     color: #2ebd7f;
     font-size: 46px;
     position: relative;
     font-weight: normal;
+    
 }
 
 .hallCard{
-    max-width: 3px;
+    max-width: 300px;
     align-self: center;
     border: none;
     height: 200px;
