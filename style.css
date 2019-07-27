@@ -560,8 +560,8 @@ body.menuExpanded {
     height: 200px;
 }
 
-/*Blog Page */
-.blogCard{
+/*Blog Page, Gallery Page */
+.blogCard, .galCard{
    width: 22rem; 
 }
 
