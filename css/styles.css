@@ -381,13 +381,6 @@ body.menuExpanded {
     min-height: 140px;
 }
 
-<<<<<<< HEAD
-/*Form Modal Styles*/
-
-#formModal{
-    color:#333;
-}
-=======
 .parallax-h3 {
     z-index: 3;
     width: 100%;
@@ -499,7 +492,6 @@ body.menuExpanded {
     text-decoration: none;
 }
 
->>>>>>> 844e627c6a15177d91ddd0e986be9a99ae277831
 
 /* footer styles */
 .footer {

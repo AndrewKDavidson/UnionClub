@@ -89,6 +89,12 @@ body {
     height: 200px;
 }
 
+/*Blog Page */
+.blogCard{
+   width: 22rem; 
+}
+
+
 
 .overlayBox {
     background: rgba(10,0,0,0.25);
