@@ -14,28 +14,100 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
     <link rel="stylesheet" id="ot-google-fonts-css" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic%7CMontserrat:regular,700" type="text/css" media="all">
     <link rel="stylesheet" href="css/styles.css">
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mr-auto" href="./index.html">Union Club Tacoma<br >(252) 304-8415</a>
-            <div class="collapse navbar-collapse" id="Navbar">
+ 
+    <title>Union Club Tacoma</title>
+</head>
 
-           <div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pricing.html">PRICING</a></li>
-                <li class="nav-item"><a class="nav-link" href="./rentals.html">RENTALS</a></li>
-                <li class="nav-item"><a class="nav-link" href="./media.html">GALLERY</a></li>
-                <li class="nav-item active"><a class="nav-link" href="./blog.html">BLOG</a></li>
-            </ul>
+<body class="pr-0">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top gray-border isScrolling">
+        <a class="navbar-brand gray-border mr-0 text-center" href="#">Union Club tacoma<br><span class="navbar-phone">(253) 304-8415</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="nav-items">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Gallery</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item d-block d-lg-none"><a class="nav-link" href="#">Login</a></li>
+                </ul>
             </div>
+        </div>
+        <a href="javascript:void(0);" class="navbar-brand navbar-login gray-border d-none d-lg-block" data-toggle="modal" data-target="#loginModal">Member Login</a>
+
+        <div class="mobile-menu d-block d-lg-none">
+            <div class="text-left" id="mobile-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                    <li><hr></li>
+                    <li class="nav-link mt-2"><a href="javascript:void(0);"><span class="fa fa-facebook-square mr-2"></span></a><a href="javascript:void(0);"><span class="fa fa-twitter ml-2"></span></a></li>
+                </ul>
             </div>
         </div>
     </nav>
+
+    <!-- login modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-sm-7">
+                                <label for="username">Username:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="username" class="form-control form-control-sm mr-1" id="username">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-sm-7">
+                                <label for="passoword">Password:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="col-sm-5 text-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center my-2">
+                            <button type="button" class="btn btn-light btn-sm mt-0" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-dark btn-sm ml-2">Sign in</button>        
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="col-12 col-sm-6"></div>
@@ -195,11 +267,11 @@
         <div class="row">             
             <div class="col-12 footer-links d-flex justify-content-center position-absolute">
                 <ul class="d-flex d-inline justify-content-center flex-wrap justify-content-sm-between  align-items-center list-unstyled">
-                    <li class="nav-item"><a href="./index.html">Home</a></li>
-                    <li class="nav-item"><a href="./about.html">About</a></li>
-                    <li class="nav-item right-space"><a href="#">Pricing</a></li>
-                    <li class="nav-item left-space"><a href="#">Rentals</a></li>
-                    <li class="nav-item"><a href="#">Gallery</a></li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item right-space"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav-item left-space"><a href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a href="media.html">Gallery</a></li>
                     <li class="nav-item"><a href="#">Blog</a></li>
                 </ul>
             </div>
