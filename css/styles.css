@@ -5,7 +5,7 @@
 }
 
 /* Montserrat fonts */
-.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3  {
+.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-about .title  {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -58,6 +58,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+body.not-home{
+ top: 74px;
+}
+
+/* Vertical and horizontal center */
+.vh-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .row-header {
@@ -290,6 +302,7 @@ body.menuExpanded {
     text-transform: uppercase;
     padding: 16px 35px;
     border-radius: 0;
+    border: none;
     font-size: 12px;
     -webkit-transition: background 0.3s ease;
     -moz-transition: background 0.3s ease;
@@ -327,8 +340,6 @@ body.menuExpanded {
 
 .jumbotron-about {
     position: relative;
-    top: 85px;
-    padding: 70px 10px 70px 10px;
     margin: 0px auto;
     background: url("https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage1920x600W.jpg") center / cover;
     color:floralwhite;
@@ -605,43 +616,21 @@ body.menuExpanded {
     margin-bottom: 0;
 }
 
-.title{
-    text-size-adjust: 500px;
-    text-align: center;
-    
-}
+
+
 /*About Page*/
-.aboutClub{
-    text-align: center;
-    padding: 25px;
-    top: 90px;
+.jumbotron-about .title{
+    font-size: 86px;
 }
 
-.office{
-    position: absolute;
-    top: 120px;
-}
-
-.deskLady, .guyAtDesk{
-    position:relative;
-    bottom: 100%;
-}
-
-.team{
+.team {
     width: 18rem;
-    margin: 25px;
     border: none;
-    
-}
-
-.btn-member{
-    background-color: #544f75;
-    color: #fff;
 }
 
 /*Rentals Page */
 
-.h1-greatHall{
+.h1-greatHall {
     font-size: 50px;
     text-align: center;
     font-weight: normal;
@@ -649,12 +638,12 @@ body.menuExpanded {
     padding: 10px;
     margin: 10px;
 }
-.greatHall{
+.greatHall {
     padding: 10px;
     margin: 10px;
 }
 
-.rentals{
+.rentals {
     color: #2ebd7f;
     font-size: 46px;
     position: relative;
@@ -662,7 +651,7 @@ body.menuExpanded {
     
 }
 
-.hallCard{
+.hallCard {
     max-width: 300px;
     align-self: center;
     border: none;
