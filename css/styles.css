@@ -5,7 +5,7 @@
 }
 
 /* Montserrat fonts */
-.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-about .title  {
+.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-about .title, .aboutUs h3  {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -46,6 +46,7 @@ html, body {
 html{
     background-color: #333;
 }
+
 body {
     position: relative;
     left: 0;
@@ -64,6 +65,10 @@ body.not-home{
  top: 74px;
 }
 
+.card {
+    background-color: inherit;
+}
+
 /* Vertical and horizontal center */
 .vh-center {
     position: absolute;
@@ -79,7 +84,6 @@ body.not-home{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 26px;
-
 }
 
 .row-content {
@@ -245,7 +249,7 @@ body.menuExpanded {
     color: #333!important;
 }
 
-.navbar.isScrolling a:hover{
+.navbar.isScrolling a:hover, .not-home .navbar.isScrolling .nav-item.active a {
     border-bottom: 2px solid #333;
 }
 
@@ -628,6 +632,13 @@ body.menuExpanded {
     border: none;
 }
 
+.aboutUs h3 {
+    color: #333333;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /*Rentals Page */
 
 .h1-greatHall {
@@ -687,7 +698,7 @@ body.menuExpanded {
     .footer-links .right-space {
         margin-right: 0px;
     }
-    .jumbotron.home h1 {
+    .jumbotron.home .jumbotron-header h1 {
         font-size: 60px;
     }
     .contact-section .contact-address {
@@ -718,7 +729,7 @@ body.menuExpanded {
     overflow-x: hidden !important;
     }
 
-    .jumbotron h1 {
+    .jumbotron.home .jumbotron-header h1 {
         font-size: 30px;
     }
 }
