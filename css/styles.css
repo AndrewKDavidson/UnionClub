@@ -670,6 +670,12 @@ body.pricing {
     text-transform: uppercase;
     text-decoration: none;
 }
+.prices .card-body a i {
+    transition: all .3s ease;
+}
+.prices .card-body a:hover i {
+    margin-left: 10px;
+}
 .prices strong {
     font-size: 44px;
     font-weight: 300;
