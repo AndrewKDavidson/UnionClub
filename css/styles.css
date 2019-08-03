@@ -3,9 +3,16 @@
 *  {
     font-family: 'Lato', sans-serif;
 }
+.form-control:focus {
+    color: inherit;
+    background-color: inherit;
+    border-color: #e5e5e5;
+    outline: 0;
+    box-shadow: none;
+}
 
 /* Montserrat fonts */
-.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-pages .title, .aboutUs h3, .pricing .card h3.card-title, .prices .card-body a  {
+.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-pages .title, .aboutUs h3, .pricing .card h3.card-title, .prices .card-body a, .rentals .rentals-header h2, .rentals .rentals-header h4, .rentals h1, .rentals .card-title, .rentals h3, .rentals .disclaimer {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -63,6 +70,10 @@ body {
 
 body.not-home{
  top: 74px;
+}
+
+body.rentals, body.pricing {
+    background-color: #f9f9f9;
 }
 
 .card {
@@ -646,9 +657,6 @@ body.menuExpanded {
 }
 
 /* Pricing page */
-body.pricing {
-    background-color: #f9f9f9;
-}
 .pricing .card h3.card-title {
     color: #333333;
     font-size: 26px;
@@ -691,7 +699,7 @@ body.pricing {
 }
 
 /*Rentals Page */
-.h1-greatHall {
+.rentals h1 {
     font-size: 50px;
     text-align: center;
     font-weight: normal;
@@ -699,24 +707,106 @@ body.pricing {
     padding: 10px;
     margin: 10px;
 }
-.greatHall {
-    padding: 10px;
-    margin: 10px;
+.rentals .rentals-header h4 {
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 0.0625em;
+    color: #787878;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rentals h3 {
+    line-height: 46px;
+    margin-bottom: 22px;
+    margin-top: 32px;
+    font-size: 36px;
 }
 
-.rentals {
+.rentals .rentals-header h2 {
+    position: relative;
+    font-size: 46px;
+    margin-bottom: 52px;
+    color: #333333;
+    letter-spacing: 0.875px;
+    font-weight: 400;
+}
+.rentals p {
+    line-height: 30px;
+    margin-bottom: 22px;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.rentals .rentals-header h2:after {
+    position: absolute;
+    left: 50%;
+    bottom: -52px;
+    width: 45px;
+    height: 1px;
+    margin-left: -22px;
+    background: #544f75;
+    content: "";
+}
+
+.rentals .rentals-header .wrapper {
+    padding-bottom: 50px;
+}
+.rentals-nav, .rentals-nav a {
+    color: #993366!important;
+}
+.rentals-nav .nav-link {
+    padding: 0;
+}
+.rentals-nav .list-inline-item {
+    margin-right: 0;
+}
+.rentals .carousel {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.rentals .carousel img {
+    padding: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+}
+.rentals .carousel .col-4 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.rentals .card-title {
     color: #2ebd7f;
     font-size: 46px;
     position: relative;
     font-weight: normal;
-    
+    margin-bottom: 25px;
 }
-
-.hallCard {
-    max-width: 300px;
-    align-self: center;
-    border: none;
-    height: 200px;
+.rentals label {
+    font-size: 13px;
+    color: #4b4b4b;
+    margin-top: 20px;
+}
+.rentals input, .rentals textarea {
+    padding: 10px 16px;
+    border: 1px solid #e5e5e5;
+    background: rgba(0,0,0,0);
+    color: #787878;
+    font-size: 12px;
+    border-radius: 0;
+}
+.rentals .disclaimer {
+    line-height: 32px;
+    margin-bottom: 22px;
+    margin-top: 32px;
+    font-size: 22px;
+}
+.rentals .carousel:last-of-type .carousel-item {
+    height: 240px;
 }
 
 /*Blog Page, Gallery Page */
@@ -776,7 +866,17 @@ body.pricing {
     .jumbotron-pages {
         height: 40vh;
     }
+    .rentals .rentals-header h2 {
+        font-size: 36px;
+    }
 }
+
+@media (min-width: 992px)  {
+    .rentals .container {
+        max-width: 770px;
+    }
+}
+
 
 @media (max-width: 576px) {
     html, body {
