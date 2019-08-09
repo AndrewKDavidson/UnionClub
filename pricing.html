@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,261 +8,312 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    
+
     <!--Bootstrap css files-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
-    <link rel="stylesheet" id="ot-google-fonts-css" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic%7CMontserrat:regular,700" type="text/css" media="all">
+    <link rel="stylesheet" id="ot-google-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic%7CMontserrat:regular,700"
+        type="text/css" media="all">
     <link rel="stylesheet" href="css/styles.css">
-<body class="pr-0">
-    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top gray-border">
 
-        <a class="navbar-brand gray-border mr-0 text-center" href="#">Union Club tacoma<br><span class="navbar-phone">(253) 304-8415</span></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <title>Pricing - Union Club Tacoma</title>
+</head>
+
+<body class="pr-0 not-home pricing">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top gray-border isScrolling">
+        <a class="navbar-brand gray-border mr-0 text-center" href="#">Union Club tacoma<br><span
+                class="navbar-phone">(253) 304-8415</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
             <div class="collapse navbar-collapse" id="nav-items">
                 <ul class="navbar-nav mr-auto ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./rentals.html">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./media.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item d-block d-lg-none"><a class="nav-link" href="#">Login</a></li>
                 </ul>
             </div>
         </div>
-        <a href="javascript:void(0);" class="navbar-brand navbar-login gray-border d-none d-lg-block" data-toggle="modal" data-target="#loginModal">Member Login</a>
+        <a href="javascript:void(0);" class="navbar-brand navbar-login gray-border d-none d-lg-block"
+            data-toggle="modal" data-target="#loginModal">Member Login</a>
 
         <div class="mobile-menu d-block d-lg-none">
             <div class="text-left" id="mobile-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
-                    <li><hr></li>
-                    <li class="nav-link mt-2"><a href="javascript:void(0);"><span class="fa fa-facebook-square mr-2"></span></a><a href="javascript:void(0);"><span class="fa fa-twitter ml-2"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li class="nav-link mt-2"><a href="javascript:void(0);"><span
+                                class="fa fa-facebook-square mr-2"></span></a><a href="javascript:void(0);"><span
+                                class="fa fa-twitter ml-2"></span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-        <!-- login modal -->
-        <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Login </h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+    <!-- login modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-sm-7">
+                                <label for="username">Username:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="username" class="form-control form-control-sm mr-1" id="username">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-sm-7">
+                                <label for="passoword">Password:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="col-sm-5 text-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center my-2">
+                            <button type="button" class="btn btn-light btn-sm mt-0" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-dark btn-sm ml-2">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header image -->
+    <header class="jumbotron-pages">
+        <div class="row jumbotron-header">
+            <div class="col-12 vh-center text-center">
+                <h1 class="title">Membership Pricing</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- pricing cards -->
+    <div class="container my-5">
+        <div class="card mb-5 prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2017/12/DayPass.png">
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-row justify-content-center">
-                                <div class="form-group col-sm-7">
-                                    <label for="username">Username:</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="username" class="form-control form-control-sm mr-1" id="username">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center">
-                                <div class="form-group col-sm-7">
-                                    <label for="passoword">Password:</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
-                                        </div>
-                                        <input type="password" class="form-control form-control-sm mr-1" id="password">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center">
-                                <div class="col-sm-5 text-center mb-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center my-2">
-                                <button type="button" class="btn btn-light btn-sm mt-0" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-dark btn-sm ml-2">Sign in</button>        
-                            </div>
-                        </form>
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">DAY PASS</h3>
+                            <p><span class="money">$</span><strong>20</strong> /day</p>
+                            <p>Try us out for the day and work in our common areas. Grab a
+                                cup of coffee on us, bring your laptop, pick a seat, and get to work.</p> 
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    <div class="col-md-6 ">
-            <div class="card bg-dark text-white">
-                <img class="img-fluid" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/DSCF7105FBCOPY1920x1600BLACKW.jpg" alt="office">
-                    <div class="card-img-overlay">
-                       <h5>MEMBERSHIP PRICING</h5>
+        <div class="card mb-5 prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2018/05/5DayPassPhoto.jpg">
                     </div>
-            </div>
-    </div>
-    <body>
-             <div class="card mb-3 mr-3 offset-1 prices">
-                    <div class="card text-left">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/DayPass.png">
-                            </div>
-                            <div class="col-sm-7 ">
-                                <div class="card-body">
-                                <h2 class="card-title">DAY PASS</h2>
-                                <p class="card-text">$20 /<br>Try us out for the day and work in our common areas. Grab a cup of coffee on us, bring your laptop, pick a seat, and get to work.   <br>LEARN MORE</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">5 DAY PASSES</h3>
+                            <p><span class="money">$</span><strong>75</strong> /</p>
+                            <p>Try us out for the day and work in our common areas. Grab a
+                                cup of coffee on us, bring your laptop, pick a seat, and get to work. 5 day passes for
+                                the price of less than 4! (Save $25) Can be used…</p>
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="card mb-5 prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2017/12/Cafe.png">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">CLUB CAFE MEMBERSHIP</h3>
+                            <p><span class="money">$</span><strong>99</strong> /month</p>
+                            <p>Enjoy a flexible work space without the commitment of a
+                                private office or dedicated desk. Work in our common areas Monday through Friday
+                                9-5pm.</p>
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="card mb-3 mr-3 offset-1 prices">
-                <div class="card text-left">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2018/05/5DayPassPhoto.jpg">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body">
-                            <h2 class="card-title">5 DAY PASSES</h2>
-                            <p class="card-text">$75 /<br>Try us out for the day and work in our common areas. Grab a cup of coffee on us, bring your laptop, pick a seat, and get to work.   5 day passes for the price of less than 4! (Save $25) Can be used… <br>LEARN MORE</p>
-                            </div>
-                        </div>
+        <div class="card mb-5 prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2017/12/commons.png">
                     </div>
-                </div>
-            </div>    
-        <div class="card mb-3 mr-3 offset-1 prices">
-                <div class="card text-left">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/Cafe.png">
-                        </div>
-                            <div class="col-sm-7">
-                             <div class="card-body">
-                                <h2 class="card-title">CLUB CAFE MEMBERSHIP</h2>
-                                <p class="card-text">$99 /month<br>Enjoy a flexible work space without the commitment of a private office or dedicated desk. Work in our common areas Monday through Friday 9-5pm.<br>LEARN MORE</p>
-                            </div>
-                           </div>
-                        </div>
-                     </div>
-                </div>
-         </div>
-         <div class="card mb-3 mr-3 offset-1 prices">
-                <div class="card text-left">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/commons.png">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body">
-                                <h2 class="card-title">COMMONS MEMBERSHIP</h2>
-                                <p class="card-text">$175 /month<br>An option for night owls and sunrise chasers. Work in our common areas Monday through Sunday 24 hours a day.<br>LEARN MORE</p>
-                            </div>
-                         </div>
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">COMMONS MEMBERSHIP</h3>
+                            <p><span class="money">$</span><strong>175</strong> /month</p>
+                            <p>An option for night owls and sunrise chasers. Work in
+                                our common areas Monday through Sunday 24 hours a day.</p>
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 mr-3 offset-1 prices">
-                    <div class="card text-left">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/DedicatedDesk.png">
-                            </div>
-                            <div class="col-sm-7">
-                            <div class="card-body">
-                                <h2 class="card-title">DEDICATED DESK</h2>
-                                <p class="card-text">$199 /month and up<br>Leave your work for the night and come back to it in the morning. A desk of your own in shared space.   Learn more about Private Office availability *By requesting a tour you agree to allow Union Club Tacoma to periodically send you emails.<br>LEARN MORE</p>
-                            </div>
-                        </div>
+        </div>
+        <div class="card mb-5 prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2017/12/DedicatedDesk.png">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">DEDICATED DESK</h3>
+                            <p><span class="money">$</span><strong>199</strong> /month and up</p>
+                            <p>Leave your work for the night and come back to it
+                                in the morning. A desk of your own in shared space. Learn more about Private Office
+                                availability *By requesting a tour you agree to allow Union Club Tacoma to periodically
+                                send you emails.</p>
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>                        </div>
                     </div>
                 </div>
             </div>
-                <div class="card mb-3 mr-3 offset-1 prices">
-                    <div class="card text-left">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/Private-office.png">
-                                </div>
-                                <div class="col-sm-7">
-                                <div class="card-body">
-                                    <h2 class="card-title">PRIVATE OFFICE</h2>
-                                    <p class="card-text">$399 /month and up<br>Take comfort in shutting your door and working in spacious comfort. Whether you are a team of one or eight, we have private offices available for rent.   Learn more about Private Office availability *By requesting to learn more you agree to allow Union Club…<br>LEARN MORE</p>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+        <div class="card mb-5 prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2017/12/Private-office.png">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">PRIVATE OFFICE</h3>
+                            <p><span class="money">$</span><strong>399</strong> /month and up</p>
+                            <p>Take comfort in shutting your door and working in
+                                spacious comfort. Whether you are a team of one or eight, we have private offices
+                                available for rent. Learn more about Private Office availability *By requesting to learn
+                                more you agree to allow Union Club…</p>
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>                        </div>
                     </div>
                 </div>
-                <div class="card mb-3 mr-3 offset-1 prices">
-                    <div class="card text-left">
-                         <div class="row">
-                                <div class="col-md-4">
-                                    <img class="card-img-left" src="https://unionclubtacoma.com/wp-content/uploads/2017/12/EventRentals470x382.jpg">
-                                </div>
-                                <div class="col-sm-7">   
-                                    <div class="card-body">
-                                        <h2 class="card-title">GREAT HALL EVENT RENTALS</h2>
-                                        <p class="card-text">$75 /hour and up<br>PAST  -  PRESENT  -  PRICING  -  FEATURES  -  PRAISE  -  CONTACT The Great Hall of the Past Organized by a group of well-known businessmen in 1888, the Union Club Tacoma is one of Tacoma's oldest event venues. Events over the years have ranged from festive - think the annual Daffodil…<br>LEARN MORE</p>
-                                    </div>
-                                 </div>
-                             </div>
-                         </div>
+            </div>
+        </div>
+        <div class="card prices">
+            <div class="card text-left">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="img-responsive w-100"
+                            src="https://unionclubtacoma.com/wp-content/uploads/2017/12/EventRentals470x382.jpg">
                     </div>
-    </body>
-       <!-- footer content -->
-  <footer class="footer">
-    <div class="col-12 footer-social">
+                    <div class="col-lg-7">
+                        <div class="card-body">
+                            <h3 class="card-title">GREAT HALL EVENT RENTALS</h3>
+                            <p><span class="money">$</span><strong>75</strong> /hour and up</p>
+                            <p>PAST - PRESENT - PRICING - FEATURES - PRAISE -
+                                CONTACT The Great Hall of the Past Organized by a group of well-known businessmen in
+                                1888, the Union Club Tacoma is one of Tacoma's oldest event venues. Events over the
+                                years have ranged from festive - think the annual Daffodil…</p>
+                            <a href="#">LEARN MORE &nbsp;&nbsp;&nbsp;<i class="fa fa-long-arrow-right" style="font-size: 16px;"></i></a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer content -->
+    <footer class="footer">
+        <div class="col-12 footer-social">
             <div class="text-center d-flex justify-content-center">
                 <div class="social-item mr-5">
-                    <a class="btn text-center" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-square"></i><span class="d-none d-lg-inline">Facebook</span></a>
+                    <a class="btn text-center" href="http://www.facebook.com/profile.php?id="><i
+                            class="fa fa-facebook-square"></i><span class="d-none d-lg-inline">Facebook</span></a>
                 </div>
                 <div class="social-item">
-                    <a class="btn text-center" href="http://twitter.com/"><i class="fa fa-twitter"></i><span class="d-none d-lg-inline">Twitter</span></a>
+                    <a class="btn text-center" href="http://twitter.com/"><i class="fa fa-twitter"></i><span
+                            class="d-none d-lg-inline">Twitter</span></a>
                 </div>
             </div>
         </div>
-    <div class="row">             
-        <div class="col-12 footer-links d-flex justify-content-center position-absolute">
-            <ul class="d-flex d-inline justify-content-center flex-wrap justify-content-sm-between  align-items-center list-unstyled">
-                <li class="nav-item"><a href="./index.html">Home</a></li>
-                <li class="nav-item"><a href="./about.html">About</a></li>
-                <li class="nav-item right-space"><a href="./pricing.html">Pricing</a></li>
-                <li class="nav-item left-space"><a href="./rentals.html">Rentals</a></li>
-                <li class="nav-item"><a href="./media.html">Gallery</a></li>
-                <li class="nav-item"><a href="./blog.html">Blog</a></li>
-            </ul>
+        <div class="row">
+            <div class="col-12 footer-links d-flex justify-content-center position-absolute">
+                <ul
+                    class="d-flex d-inline justify-content-center flex-wrap justify-content-sm-between  align-items-center list-unstyled">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item right-space"><a href="#">Pricing</a></li>
+                    <li class="nav-item left-space"><a href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a href="media.html">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo mx-auto">
+                <a href="index.html">
+                    <img class="mx-auto" src="img/Union-Club-White-Cropped-for-Footer.png" alt="Union Club Tacoma Logo">
+                </a>
+            </div>
         </div>
-        <div class="footer-logo mx-auto">
-            <a href="index.html">
-                <img class="mx-auto" src="img/Union-Club-White-Cropped-for-Footer.png" alt="Union Club Tacoma Logo">
-            </a>
+        <div class="row justify-content-center">
+            <div class="col-auto copyright">
+                <p>© Copyright 2019 Union Club tacoma</p>
+            </div>
         </div>
-    </div>
-    <div class="row justify-content-center">             
-        <div class="col-auto copyright">
-            <p>© Copyright 2019 Union Club tacoma</p>
-        </div>
-    </div>
-</footer>   
+    </footer>
     <!-- Jquery first, then popper.js, then bootstrap, then parallax, then custom js -->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/scroll-parallax/dist/Parallax.min.js"></script>
-<script src="node_modules/wowjs/dist/wow.min.js"></script>
-<script src="js/scripts.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/scroll-parallax/dist/Parallax.min.js"></script>
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

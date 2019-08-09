@@ -3,9 +3,16 @@
 *  {
     font-family: 'Lato', sans-serif;
 }
+.form-control:focus {
+    color: inherit;
+    background-color: inherit;
+    border-color: #e5e5e5;
+    outline: 0;
+    box-shadow: none;
+}
 
 /* Montserrat fonts */
-.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3  {
+.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-pages .title, .aboutUs h3, .pricing .card h3.card-title, .prices .card-body a, .rentals .rentals-header h2, .rentals .rentals-header h4, .rentals h1, .rentals .card-title, .rentals h3, .rentals .disclaimer, .j-blog, .j-blog h1, .card-title {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -46,6 +53,7 @@ html, body {
 html{
     background-color: #333;
 }
+
 body {
     position: relative;
     left: 0;
@@ -60,6 +68,26 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+body.not-home{
+ top: 74px;
+}
+
+body.rentals, body.pricing {
+    background-color: #f9f9f9;
+}
+
+.card {
+    background-color: inherit;
+}
+
+/* Vertical and horizontal center */
+.vh-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .row-header {
     margin: 30px auto;
     padding: 0px auto;
@@ -67,7 +95,6 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 26px;
-
 }
 
 .row-content {
@@ -233,7 +260,7 @@ body.menuExpanded {
     color: #333!important;
 }
 
-.navbar.isScrolling a:hover{
+.navbar.isScrolling a:hover, .not-home .navbar.isScrolling .nav-item.active a {
     border-bottom: 2px solid #333;
 }
 
@@ -290,6 +317,7 @@ body.menuExpanded {
     text-transform: uppercase;
     padding: 16px 35px;
     border-radius: 0;
+    border: none;
     font-size: 12px;
     -webkit-transition: background 0.3s ease;
     -moz-transition: background 0.3s ease;
@@ -325,16 +353,20 @@ body.menuExpanded {
     z-index: 1;
 }
 
-.jumbotron-about {
+.jumbotron-pages {
     position: relative;
-    top: 85px;
-    padding: 70px 10px 70px 10px;
+    text-transform: uppercase;
     margin: 0px auto;
     background: url("https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage1920x600W.jpg") center / cover;
     color:floralwhite;
     width: 100%;
     height: 60vh;
     z-index: 1;
+}
+
+.pricing .jumbotron-pages {
+    background: url("../img/pricing-jumbotron.jpg") center 55% / cover;
+    height: 480px;
 }
 
 .jumbotron.home .jumbotron-header {
@@ -360,7 +392,7 @@ body.menuExpanded {
 }
 
 
-/* section styles */
+/* Home section styles */
 .benefits-section {
     padding: 60px 0;
     background-color: rgb(248, 248, 248);
@@ -605,43 +637,69 @@ body.menuExpanded {
     margin-bottom: 0;
 }
 
-.title{
-    text-size-adjust: 500px;
-    text-align: center;
-    
-}
+
+
 /*About Page*/
-.aboutClub{
-    text-align: center;
-    padding: 25px;
-    top: 90px;
+.jumbotron-pages .title{
+    font-size: 86px;
 }
 
-.office{
-    position: absolute;
-    top: 120px;
-}
-
-.deskLady, .guyAtDesk{
-    position:relative;
-    bottom: 100%;
-}
-
-.team{
+.team {
     width: 18rem;
-    margin: 25px;
     border: none;
-    
 }
 
-.btn-member{
-    background-color: #544f75;
-    color: #fff;
+.aboutUs h3 {
+    color: #333333;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Pricing page */
+.pricing .card h3.card-title {
+    color: #333333;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.pricing .card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.13)
+}
+.prices .card-body {
+    padding: 40px;
+}
+.prices .card-body a {
+    color: #544f75;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.prices .card-body a i {
+    transition: all .3s ease;
+}
+.prices .card-body a:hover i {
+    margin-left: 10px;
+}
+.prices strong {
+    font-size: 44px;
+    font-weight: 300;
+}
+.prices p {
+    margin-bottom: 4px;
+}
+.prices .money {
+    position: relative;
+    top: -17px;
+    font-size: 20px;
+    margin-right: 2px;
 }
 
 /*Rentals Page */
-
-.h1-greatHall{
+.rentals h1 {
     font-size: 50px;
     text-align: center;
     font-weight: normal;
@@ -649,29 +707,175 @@ body.menuExpanded {
     padding: 10px;
     margin: 10px;
 }
-.greatHall{
-    padding: 10px;
-    margin: 10px;
+.rentals .rentals-header h4 {
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 0.0625em;
+    color: #787878;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rentals h3 {
+    line-height: 46px;
+    margin-bottom: 22px;
+    margin-top: 32px;
+    font-size: 36px;
 }
 
-.rentals{
+.rentals .rentals-header h2 {
+    position: relative;
+    font-size: 46px;
+    margin-bottom: 52px;
+    color: #333333;
+    letter-spacing: 0.875px;
+    font-weight: 400;
+}
+.rentals p {
+    line-height: 30px;
+    margin-bottom: 22px;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.rentals .rentals-header h2:after {
+    position: absolute;
+    left: 50%;
+    bottom: -52px;
+    width: 45px;
+    height: 1px;
+    margin-left: -22px;
+    background: #544f75;
+    content: "";
+}
+
+.rentals .rentals-header .wrapper {
+    padding-bottom: 50px;
+}
+.rentals-nav, .rentals-nav a {
+    color: #993366!important;
+}
+.rentals-nav .nav-link {
+    padding: 0;
+}
+.rentals-nav .list-inline-item {
+    margin-right: 0;
+}
+.rentals .carousel {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.rentals .carousel img {
+    padding: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+}
+.rentals .carousel .col-4 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.rentals .card-title {
     color: #2ebd7f;
     font-size: 46px;
     position: relative;
     font-weight: normal;
+    margin-bottom: 25px;
+}
+.rentals label {
+    font-size: 13px;
+    color: #4b4b4b;
+    margin-top: 20px;
+}
+.rentals input, .rentals textarea {
+    padding: 10px 16px;
+    border: 1px solid #e5e5e5;
+    background: rgba(0,0,0,0);
+    color: #787878;
+    font-size: 12px;
+    border-radius: 0;
+}
+.rentals .disclaimer {
+    line-height: 32px;
+    margin-bottom: 22px;
+    margin-top: 32px;
+    font-size: 22px;
+}
+.rentals .carousel:last-of-type .carousel-item {
+    height: 240px;
+}
+
+
+/*Blog Page*/
+.navBlog{
+    padding: 0;
+    margin-left: 10px;
+    text-align: center;
+    width: 100%;
+    border:none;
     
 }
+.navBlog a{
+    color: #787878;
+    font-size: 20px;
+    font-weight:500;
+    text-decoration: none;
 
-.hallCard{
-    max-width: 300px;
-    align-self: center;
-    border: none;
-    height: 200px;
 }
 
-/*Blog Page, Gallery Page */
-.blogCard, .galCard{
-   width: 22rem; 
+.j-blog{
+text-align: center;
+background-color: #f9f9f9;
+padding-top: 55px;
+font-size: 26px;
+}
+.blogImg{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+
+}
+.blogCard{
+    align-items: auto;
+    display: inline-block;
+    width: 28rem; 
+    border: none;
+ }
+
+.imgBox{
+   padding: 5x;
+}
+
+.blogBody{
+background-color: #f9f9f9;
+}
+
+.card-title{
+    font-weight: 700;
+}
+/*Media Page*/
+.galCard{
+    padding: 10px;
+    border: none; 
+    width: 22rem; 
+    margin: 10px;
+ }
+
+.galleryBody{
+    background-color: #e9ecef;
+}
+
+.media-h2{
+    font-size: 42px;
+}
+
+.rooms{
+    font-size: 42px;
+    display: inline-flex;
 }
 
 
@@ -698,7 +902,7 @@ body.menuExpanded {
     .footer-links .right-space {
         margin-right: 0px;
     }
-    .jumbotron.home h1 {
+    .jumbotron.home .jumbotron-header h1 {
         font-size: 60px;
     }
     .contact-section .contact-address {
@@ -720,8 +924,23 @@ body.menuExpanded {
     .jumbotron.home .jumbotron-header {
         margin-top: -80px;
     }
-
+    .jumbotron-pages .title {
+        font-size: 50px;
+    }
+    .jumbotron-pages {
+        height: 40vh;
+    }
+    .rentals .rentals-header h2 {
+        font-size: 36px;
+    }
 }
+
+@media (min-width: 992px)  {
+    .rentals .container {
+        max-width: 770px;
+    }
+}
+
 
 @media (max-width: 576px) {
     html, body {
@@ -729,7 +948,7 @@ body.menuExpanded {
     overflow-x: hidden !important;
     }
 
-    .jumbotron h1 {
+    .jumbotron.home .jumbotron-header h1 {
         font-size: 30px;
     }
 }

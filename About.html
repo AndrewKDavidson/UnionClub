@@ -3,38 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>About Us</title>
+
+    <!--Bootstrap css files-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
     <link rel="stylesheet" id="ot-google-fonts-css"
         href="https://fonts.googleapis.com/css?family=Lato:300,300italic,regular,italic,700,700italic%7CMontserrat:regular,700"
         type="text/css" media="all">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <title>About Us - Union Club Tacoma</title>
 </head>
 
-<body>
+<body class="pr-0 not-home aboutUs">
     <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top gray-border isScrolling">
-        <a class="navbar-brand gray-border mr-0 text-center" href="./index.html">Union Club tacoma<br><span
+        <a class="navbar-brand gray-border mr-0 text-center" href="#">Union Club tacoma<br><span
                 class="navbar-phone">(253) 304-8415</span></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#mobile-nav">
+            data-target="#mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
             <div class="collapse navbar-collapse" id="nav-items">
                 <ul class="navbar-nav mr-auto ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./rentals.html">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./media.html">GALLERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item d-block d-lg-none"><a class="nav-link" href="#">Login</a></li>
                 </ul>
             </div>
@@ -45,13 +48,14 @@
         <div class="mobile-menu d-block d-lg-none">
             <div class="text-left" id="mobile-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./rentals.html">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./media.html">GALLERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
                     <li>
                         <hr>
                     </li>
@@ -60,7 +64,6 @@
                                 class="fa fa-twitter ml-2"></span></a></li>
                 </ul>
             </div>
-        </div>
         </div>
     </nav>
 
@@ -106,9 +109,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row justify-content-center">
-                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-2">Sign in</button>
+                        <div class="form-row justify-content-center my-2">
+                            <button type="button" class="btn btn-light btn-sm mt-0" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-dark btn-sm ml-2">Sign in</button>
                         </div>
                     </form>
                 </div>
@@ -116,81 +119,90 @@
         </div>
     </div>
 
-    <header class="jumbotron-about">
-        <div class="row jumbotron-header text-center">
-            <div class="col-md-12">
+    <header class="jumbotron-pages">
+        <div class="row jumbotron-header">
+            <div class="col-12 vh-center text-center">
                 <h1 class="title">ABOUT US</h1>
             </div>
         </div>
     </header>
+
     <div class="container">
-        <div class="row">
+        <div class="row py-4">
             <div class="col-md-6">
-                <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage570x270W.jpg"
-                    class="img-fluid office" alt="comfortable office">
+                <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/TopImage570x270W.jpg" class="img-fluid"
+                    alt="comfortable office">
+                <div class="row py-4">
+                    <div class="col-6">
+                        <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottoomImage270x270W.jpg"
+                            class="img-fluid " alt="lady at desk">
+                    </div>
+                    <div class="col-6">
+                        <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottomImage270x270W.jpg"
+                            class="img-fluid " alt="guy at desk">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-12 aboutClub">
-                <h2>ABOUT THE UNION CLUB</h2>
+            <div class="col-12 col-md-5 offset-md-1 text-center">
+                <h3 class="">ABOUT THE UNION CLUB</h3>
                 <br>
                 <p> The Union Club is a coworking space contributing to Tacoma's growing artistic and entrepreneurial
                     communities. It combines a maker studio, event hall, and office coworking space, in a 15,000 square
-                    foot historic building in downtown Tacoma. <br>
+                    foot historic building in downtown Tacoma.
+                </p>
+                <p>
 
                     Our mission is to support and promote local art and technology, creating a gathering place for
                     creatives and ​entrepreneurs. By providing a supportive community, the Union Club is a place where
                     members can do what they love and love where they work. We offer a variety of memberships that range
                     in price and vary in privacy. Whether you thrive working in a communal space or favor closing the
-                    door behind you the Union Club fits the bill.</p>
+                    door behind you the Union Club fits the bill.
+                </p>
 
-                <h6> History</h6>
+                <h5 class="mb-3"><strong>History</strong></h5>
                 <p>Founded in 1888, the Union Club served as a social and business club for the most influential men of
                     the time. In 1906, a three-story addition was designed to give women access to the Union Club. In
-                    1936, the University Union Club was founded and remained in the building until 1985. <br>
-
+                    1936, the University Union Club was founded and remained in the building until 1985.
+                </p>
+                <p>
                     Designated guests of the Union Club include President William Taft, First Lady Eleanor Roosevelt and
-                    college football coach Knute Rockne. <br>
-
+                    college football coach Knute Rockne.
+                </p>
+                <p>
                     In 2016, the Union Club was in a state of disrepair and was purchased by Amber and Eli Moreno. With
                     a passion for historical preservation they have restored the building back to its original grandeur
                     and have created a new, modern take on the Union Club.
                 </p>
                 <span class="navbar-text">
                     <a data-toggle="modal" data-target="#formModal">
-                        <button type="button" class="btn btn-member">Become a Member </button>
+                        <button type="button" class="btn btn-dark my-4">Become a Member </button>
                     </a>
                 </span>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-md-4 col-lg-3">
-                <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottoomImage270x270W.jpg"
-                    class="img-fluid deskLady" alt="lady at desk">
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <img src="https://unionclubtacoma.com/wp-content/uploads/2017/12/BottomImage270x270W.jpg"
-                    class="img-fluid guyAtDesk" alt="guy at desk">
-            </div>
-        </div>
     </div>
+
     <!--Team Cards-->
-    <div class="container">
-        <h2 class="row justify-content-center">MEET OUR TEAM</h2>
-        <div class="row justify-content-center">
-            <div class="card team col-md-5 col-lg-3">
-                <img class="card-img-top"
-                    src="https://unionclubtacoma.com/wp-content/uploads/2019/05/cropped-Kyro-Headshot-2-300x300.jpeg"
-                    alt="Kyro Parker">
-                <div class="card-body">
-                    <h5>Kyro Parker</h5>
-                    <p class="card-text">Community Manager & Events Manager</p>
+    <div style="background-color: rgb(249, 249, 249);">
+        <div class="container row-content">
+            <h2 class="row justify-content-center">MEET OUR TEAM</h2>
+            <div class="row justify-content-center pt-5 text-center">
+                <div class="card team col-md-5">
+                    <img class="card-img-top"
+                        src="https://unionclubtacoma.com/wp-content/uploads/2019/05/cropped-Kyro-Headshot-2-300x300.jpeg"
+                        alt="Kyro Parker">
+                    <div class="card-body">
+                        <h5>Kyro Parker</h5>
+                        <p class="card-text">Community Manager & Events Manager</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card team col-md-5 col-lg-3">
-                <img class="card-img-top"
-                    src="https://unionclubtacoma.com/wp-content/uploads/2018/01/cropped-UnionClub_HeatherHurtPhotography-12-1-300x300.jpg">
-                <div class="card-body">
-                    <h5>Stasha Moreno</h5>
-                    <p class="card-text">Chief Operations Officer</p>
+                <div class="card team col-md-5">
+                    <img class="card-img-top"
+                        src="https://unionclubtacoma.com/wp-content/uploads/2018/01/cropped-UnionClub_HeatherHurtPhotography-12-1-300x300.jpg">
+                    <div class="card-body">
+                        <h5>Stasha Moreno</h5>
+                        <p class="card-text">Chief Operations Officer</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,6 +271,43 @@
         </div>
     </div>
 
+    <!-- instagram hover section -->
+    <div class="instagram-section row">
+        <div id="small-img" class="col-12 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <img src="img/instagram-1.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-2.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-3.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-4.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-5.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-6.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-7.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+                <li>
+                    <img src="img/instagram-8.jpg" class="img-responsive inline-block" alt="Responsive image" />
+                </li>
+            </ul>
+            <div class="instagram-hashtag">
+                <h3>
+                    <a href="http://www.instagram.com/unionclubtacoma" target="_blank">#UNIONCLUBTACOMA</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
 
     <!-- footer content -->
     <footer class="footer">
@@ -278,12 +327,12 @@
             <div class="col-12 footer-links d-flex justify-content-center position-absolute">
                 <ul
                     class="d-flex d-inline justify-content-center flex-wrap justify-content-sm-between  align-items-center list-unstyled">
-                    <li class="nav-item"><a href="./index.html">Home</a></li>
-                    <li class="nav-item"><a href="./about.html">About</a></li>
-                    <li class="nav-item right-space"><a href="./pricing.html">Pricing</a></li>
-                    <li class="nav-item left-space"><a href="./rentals.html">Rentals</a></li>
-                    <li class="nav-item"><a href="./media.html">Gallery</a></li>
-                    <li class="nav-item"><a href="./blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item right-space"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav-item left-space"><a href="rentals.html">Rentals</a></li>
+                    <li class="nav-item"><a href="media.html">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-logo mx-auto">
@@ -304,6 +353,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/scroll-parallax/dist/Parallax.min.js"></script>
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
     <script src="js/scripts.js"></script>
 
 </body>
