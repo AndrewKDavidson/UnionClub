@@ -2,8 +2,15 @@
 document.body.onload = init();
 
 function init() {
+  initParallax();
   checkScroll();
 };
+
+// initialize parallax
+function initParallax() {
+  var p = new Parallax('.parallax').init();
+}
+initParallax();
 
 // delay onscroll to every 100ms, run checkscroll
 var didScroll = false;
