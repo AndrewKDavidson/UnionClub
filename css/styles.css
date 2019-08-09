@@ -12,7 +12,7 @@
 }
 
 /* Montserrat fonts */
-.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-pages .title, .aboutUs h3, .pricing .card h3.card-title, .prices .card-body a, .rentals .rentals-header h2, .rentals .rentals-header h4, .rentals h1, .rentals .card-title, .rentals h3, .rentals .disclaimer, .j-blog, .j-blog h1, .card-title {
+.navbar .nav-link, .navbar .navbar-brand.navbar-login, .footer-links a, .row-header, .btn-light, .btn-dark, .jumbotron-header h1, .parallax-h3, .contact-section .contact-address h3, .subscribe-section h3, .jumbotron-pages .title, .aboutUs h3, .pricing .card h3.card-title, .prices .card-body a, .rentals .rentals-header h2, .rentals .rentals-header h4, .rentals h1, .rentals .card-title, .rentals h3, .rentals .disclaimer {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -809,73 +809,9 @@ body.menuExpanded {
     height: 240px;
 }
 
-
-/*Blog Page*/
-.navBlog{
-    padding: 0;
-    margin-left: 10px;
-    text-align: center;
-    width: 100%;
-    border:none;
-    
-}
-.navBlog a{
-    color: #787878;
-    font-size: 20px;
-    font-weight:500;
-    text-decoration: none;
-
-}
-
-.j-blog{
-text-align: center;
-background-color: #f9f9f9;
-padding-top: 55px;
-font-size: 26px;
-}
-.blogImg{
-    max-width: 100%;
-    height: auto;
-    padding: 5px;
-
-}
-.blogCard{
-    align-items: auto;
-    display: inline-block;
-    width: 28rem; 
-    border: none;
- }
-
-.imgBox{
-   padding: 5x;
-}
-
-.blogBody{
-background-color: #f9f9f9;
-}
-
-.card-title{
-    font-weight: 700;
-}
-/*Media Page*/
-.galCard{
-    padding: 10px;
-    border: none; 
-    width: 22rem; 
-    margin: 10px;
- }
-
-.galleryBody{
-    background-color: #e9ecef;
-}
-
-.media-h2{
-    font-size: 42px;
-}
-
-.rooms{
-    font-size: 42px;
-    display: inline-flex;
+/*Blog Page, Gallery Page */
+.blogCard, .galCard{
+   width: 22rem; 
 }
 
 
