@@ -2,15 +2,8 @@
 document.body.onload = init();
 
 function init() {
-  initParallax();
   initWow();
 };
-
-// initialize parallax
-function initParallax() {
-  var p = new Parallax('.parallax').init();
-}
-initParallax();
 
 // initialize window.js
 function initWow() {
@@ -42,6 +35,7 @@ window.addEventListener('resize', function() {
   }  
 });
 
+//check if resizing window to add and remove menuExpanded
 function windowResizing() {
   if ($(window).width() > 992) {
     $("body").removeClass("menuExpanded");
@@ -49,3 +43,12 @@ function windowResizing() {
     $("body").addClass("menuExpanded");
   }
 }
+
+
+//event listener to check if page has loaded, then remove loading screen
+window.addEventListener('load', function() {
+  $('.loading').addClass('isLoaded');
+  setTimeout(function() {
+    $('.loading').remove();
+  }, 200);
+})
